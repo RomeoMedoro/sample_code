@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SuperRestaurant</title>
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device=width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper" id="top">
+            <header>
+                <div class="row-flex" id="header-row">
+                    <div class= "header_container">
+                        <div class="header_content">
+                            <h1>Super Restaurant</h1>
+                            <p>12345 Ten Mile rd</p>
+                            <p>Southfield, MI 48075</p>
+                            <br><br><br><br><br>
+                            <p style="font-size: 2.5em">COUPONS</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="row-flex" id="nav-row">
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">Home</a></li>
+                        <li class="active"><a href="../html/coupons.html">Coupons</a></li>
+                        <li><a href="../html/menu.html">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <main>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>$5 Dollars off</h2>
+                                <p>Any of our daily special meals</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>$10 Dollars off</h2>
+                                <p>Full bill for party of 5 or more</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>1 Free Meal</h2>
+                                <p>On any bill exceeding $50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>Free Dessert</h2>
+                                <p>On any bill exceeding $25</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>10% Off</h2>
+                                <p>Catering Orders</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>1 Free Meal</h2>
+                                <p>On any bill exceeding $50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>3 Free Cookies</h2>
+                                <p>With any kid's meal</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>Free Drink</h2>
+                                <p>On lunch special</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="tile coupon">
+                                <h1>SuperRestaurant</h1>
+                                <h2>5% off</h2>
+                                <p>First time diners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <A href="#top" class="button">Back to top</A>
+            </main>
+            <footer>
+                <div class="col-sm-12">
+                    <div id="footer-element">
+                        <div id="kitchen-cover">
+                            <div class="connect">
+                                <h2>CONNECT WITH US</h2>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf230;</i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf081;</i>
+                                </a>
+                                <a href="https://www.tumblr.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf174;</i>
+                                </a>
+                            </div>
+                            <div class="col-sm-12" id="copy">
+                                <div class="copyright">
+                                    <h4><a href="tel:+17345555555">Phone: 734.555.5555</a></h4>
+                                    <h5>Copyright &#169; SuperRestaurant<br>
+                                        <a href = "mailto:MItravelInfo@testsite.com">SuperRestaurant@testsite.com</a>
+                                    </h5>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            var stickyNav = $('#nav-row').offset().top;
+            $(window).scroll(function() {  
+                if ($(window).scrollTop() > stickyNav) {
+                    $('#nav-row').addClass('fixed');
+                }
+                else {
+                     $('#nav-row').removeClass('fixed');
+                }  
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SuperRestaurant</title>
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device=width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper" id="top">
+            <header>
+                <div class="row-flex" id="header-row">
+                    <div class= "header_container">
+                        <div class="header_content">
+                            <h1>Super Restaurant</h1>
+                            <p>12345 Ten Mile rd</p>
+                            <p>Southfield, MI 48075</p>
+                            <br><br><br><br><br>
+                            <p style="font-size: 2.5em">MENU</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="row-flex" id="nav-row">
+                    <nav>
+                        <ul>
+                            <li><a href="../html/index.html">Home</a></li>
+                            <li><a href="../html/coupons.html">Coupons</a></li>
+                            <li class="active"><a href="../html/menu.html">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="side nav">
+                            <ul>
+                                <li><a href="#breakfast">Breakfast</a></li>
+                                <li><a href="#lunch">Lunch</a></li>
+                                <li><a href="#dinner">Dinner</a></li>
+                                <li><a href="#desserts">Desserts</a></li>
+                                <li><a href="#drinks">Drinks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="menu" id="breakfast">
+                            <div class="menu-container tile">
+                                <h1>Breakfast Menu</h1>
+                                <img src="../images/breakfast.jpg" alt="Breakfast Menu">
+                            </div>
+                        </div>
+                        <div class="menu" id="lunch">
+                            <h1>Lunch Menu</h1>
+                            <div class="menu-container tile">
+                                <img src="../images/lunch.jpg" alt="Lunch Menu">
+                            </div>
+                        </div>
+                        <div class="menu" id="dinner">
+                            <h1>Dinner Menu</h1>
+                            <div class="menu-container tile">
+                                <img src="../images/dinner.jpg" alt="Dinner Menu">
+                            </div>
+                        </div>
+                        <div class="menu" id="desserts">
+                            <h1>Dessert Menu</h1>
+                            <div class="menu-container tile">
+                                <img src="../images/desserts.jpg" alt="Dessert Menu">
+                            </div>
+                        </div>
+                        <div class="menu" id="drinks">
+                            <h1>Drink Menu</h1>
+                            <div class="menu-container tile">
+                                <img src="../images/drinks.jpg" alt="Drink Menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <A href="#top" class="button">Back to top</A>
+            </main>
+            <footer>
+                <div class="col-cm-12">
+                    <div id="footer-element">
+                        <div id="kitchen-cover">
+                            <div class="connect">
+                                <h2>CONNECT WITH US</h2>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf230;</i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf081;</i>
+                                </a>
+                                <a href="https://www.tumblr.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf174;</i>
+                                </a>
+                            </div>
+                            <div class="col-sm-12" id="copy">
+                                <div class="copyright">
+                                    <h4><a href="tel:+17345555555">Phone: 734.555.5555</a></h4>
+                                    <h5>Copyright &#169; SuperRestaurant<br>
+                                        <a href = "mailto:MItravelInfo@testsite.com">SuperRestaurant@testsite.com</a>
+                                    </h5>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var stickyNav = $('#nav-row').offset().top;
+                $(window).scroll(function() {  
+                    if ($(window).scrollTop() > stickyNav) {
+                        $('#nav-row').addClass('fixed');
+                    }
+                    else {
+                         $('#nav-row').removeClass('fixed');
+                    }  
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.side a').click(function() {
+                    $('.menu').hide();    
+                    $(this.getAttribute('href')).show();   
+                });
+            });
+        </script>
+    </body>
+</html>
