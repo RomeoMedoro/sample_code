@@ -1,0 +1,970 @@
+@media screen{
+	html{
+		background-color: rgb(0,0,0)
+	}
+	
+	main{
+		position: absolute;
+		width: 100%;
+	}
+	
+	.web-academy-logo{
+		font-family: fontawesome;
+		text-decoration: none;
+		line-height: 1;
+		font-size: 37px;
+		letter-spacing: 3px;
+		color: #555555;
+		top: 17px;
+	}
+	
+	.dotcom{
+		color: rgb(0, 178, 192);
+	}
+	
+	.top-right{
+		margin-top:7px;
+		font-size:19px;
+		float: right !important;
+		letter-spacing: 4px;
+		font-family: "Segoe UI",Arial,sans-serif;
+	}
+		
+	.top{
+		margin-left: 1em !important;
+		margin-right: 1em !important;
+	}
+	
+		
+	nav{
+		background-color: #000;
+	}
+
+	.mibile-nav{
+		display: none;
+	}
+	
+	#wrapper{
+		width: 100%;
+	}
+
+	#navigation{
+		float:right;
+	}
+
+	#nav-row{
+		background-color:#000;
+		position: relative;
+		top:0;
+		width: 100%;
+		z-index: 100;
+		margin-left:auto;
+		margin-right: auto;
+		height: 3em;
+	}
+	
+	#nav-row.fixed{
+	    background-color: #000;
+	    position: fixed;
+		width:100%;
+	    top: 0;
+	    -webkit-transition: all 0.3s ease-in;
+	    color: #fff;
+	    z-index: 100;
+		height: 3em;
+  	}
+	
+		
+	nav li a {
+		position:absolute;
+		display: block;
+		color: #ffffff;
+		background-color: #000;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
+		top:0;
+		float: right;
+		margin-right: 2px;
+	}
+
+	nav li {
+		float: right !important;
+       
+	}
+
+
+	#searchbox{ 
+		border-width: 1px;
+		border-style: solid;            
+		width: 335px;
+		height: 42px;
+		padding: 10px;
+		/*margin: 100px auto 50px;*/
+		overflow: hidden; /* Clear floats */
+		float:left;
+		background-color:#000;
+		top: 0;
+		position: absolute;
+	}
+
+	#search, #submit {
+		float: left;
+	}
+
+	#search{
+		padding: 5px 9px;
+		height: 25px;
+		width: 200px;
+		border: 1px solid #a4c3ca;
+		font: normal 13px 'trebuchet MS', arial, helvetica;
+		background: #f1f1f1;       
+	}
+
+	#submit{       
+		background-color: #ADD8E6;   
+		border-width: 1px;
+		border-style: solid;
+		border-color: #7eba7c #578e57 #447d43;
+		height: 25px;
+		margin: 0 0 0 10px;
+		padding: 0;
+		width: 100px;
+		cursor: pointer;
+		font: bold 14px Arial, Helvetica;
+		color: #000000;    
+	}
+
+	#submit:hover {       
+		background-color: #48D1CC;
+	}   
+
+	#submit:active {       
+		background: #0000e5;
+		outline: none;      
+	}
+
+
+	#code-container{
+		width: 100%;
+		height: 350px;
+		background-position: center bottom;
+		background-attachment: fixed;
+		background-image: url("../images/programming.jpg");
+		background-size: 100% 100%;
+      }
+
+	.main-row{
+		margin-right: -15px;
+		margin-left: -15px;
+		background-color:#000;
+	}
+	
+	.tile{
+		text-align: center;
+		height: 28em;
+	}
+	
+	.container-tile{
+		text-align:center;
+	}
+	
+	.tile-rotate{
+		height: 28em;
+		margin-top: 2em;
+		margin-left: 1em;
+	}
+	
+	/*#about-html, #about-css, #about-js{
+		background: linear-gradient(to right, #4ECDC4 , #ebfafa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ ;
+	}*/
+	
+	.bottom-left{
+		float: left;
+		margin-left: 1em;
+		width: 35%;
+		color: white;
+	}
+	
+	.bottom-middle{
+		width: 40%;
+		float: left;
+	}
+	
+	.bottom-right{
+		text-align: center;
+	}
+	
+	.bottom-right a{
+		margin: 0.5em;
+	}
+	
+	.middle-left, .middle-right{
+		display: inline-block;
+		width: 45%;
+		float: left;
+	}
+		
+	
+	.tile img{
+		vertical-align: middle;
+		margin-top: 1.5em;
+	}
+	
+	.tile p, .container-tile{
+		text-align: left;
+		margin-left: 0.5em;
+		font-family: fontawesome;
+		font-size: 17px;
+	}
+	
+	.container-tile h3{
+		text-align:center;
+	}
+	
+	footer{
+		position:fixed;
+		bottom:0;
+		left:0;
+		width:100%;
+		height:150px;
+		background:#000;
+		color:#fff;
+		
+	}
+	
+	.main-content{
+		position: relative;
+		overflow: hidden;
+		z-index: 2;
+		margin-bottom: 150px;
+		background: linear-gradient(to left, #4ECDC4 , #ebfafa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+	
+	.html-image{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.html-image img,.css-image img,.js-image img{
+		border: 3px solid #000;
+		border-radius: 10px;
+		box-shadow: 10px 10px 5px #888888;
+		width: 550px;
+		height: 350px;
+	}
+	
+	.language-name{
+		text-shadow: 3px 3px #888888;
+		color:#3333ff;
+	}
+	
+	#image-rotate{
+		position: relative;
+	}
+
+	#image-rotate img{
+		width: 100%;
+		height: 100%;
+		border: 2px solid #000;
+		position: absolute;
+	}
+
+	.learn{
+		margin-left: 2em;
+		margin-top: 5em;
+	}
+	
+	.contents{
+		width: 90%;
+		box-shadow: 10px 10px 5px #888888;
+		margin-left: auto;
+		margin-right: auto;
+		background: linear-gradient(to right, #fff , #bbc3cc);
+		margin-bottom: 2em;
+		padding-bottom: 1em;
+	}
+	
+	.contents h4{
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.internal-nav{
+		width: 100%;
+		height: 4em;
+		background-color: rgb(0,0,0);
+	}
+	
+	.internal-nav ul{
+		list-style-type: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		overflow: hidden;
+		width: 50%;
+		top:0;
+		text-align: center;
+	}
+	
+	.internal-nav li a{
+		display: inline-block;
+		color: #ffffff;
+		background-color: #000;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	
+	.internal-nav li{
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.internal-nav a:hover{
+		background-color: rgb(255, 255, 255);
+		color: rgb(0,0,0);
+		text-decoration: underline;
+	}
+	
+	.internal-nav a:focus{
+		 background-color: #fff;
+		 color: #000;
+	}
+	 
+	.site-hidden{
+		 display: none;
+	}
+	 
+	#getting-started{
+		 display: block;
+	}
+	 
+	 A.button {
+		float: right;
+		background-color: #c9c9c9;
+		opacity: 0.8;
+		-webkit-appearance: button;
+		-moz-appearance: button;
+		margin-right: 30px;
+		color: initial;
+		margin-bottom: 2em;
+	}
+	
+	.image-template, #js-image{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	.image-template img{
+		width: 450px;
+		height: 360px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#js-image img{
+		width: 500px;
+		height: 490px;
+	}
+	
+	.selectors{
+		color: brown;
+	}
+	
+	.style{
+		color: red;
+	}
+	
+	#styling-css{
+		width: 40%;
+		margin-left:auto;
+		margin-right:auto;
+		text-align: left;
+		padding-left:1em;
+	}
+	
+	#mobile-logo{
+		display: none;
+	}
+	
+	.CodeMirror {
+		font-size: 15px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.select-container{
+		margin-top: 2%;
+		text-align: center;
+	}
+	
+	.tutorial-tile{
+		width: 45%;
+		display: inline-block;
+		margin: 1em;
+	}
+	
+	.editor, #results{
+		height: 400px;
+	}
+	
+	/*#result{
+		position: absolute;
+	}*/
+	
+	#results{
+		background-color: #fff;
+		border: 2px solid #000;
+	}
+	
+	.editor{
+		display: none;
+	}
+	
+	#html-container{
+		display: block;
+	}
+	
+	button{
+		margin: 0.5em !important;
+	}
+	
+	#button-box{
+		text-align: center;
+	}
+	
+	.mobile-nav{
+		display: none;
+	}
+	
+	.mobile-nav a:hover{
+		text-decoration: none;
+	}
+	
+	iframe{
+		width:100%;
+		height: 100%;
+	}
+	
+	#tutorial-container{
+		width: 95%;
+		margin-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+		border: 10px solid grey;
+		background-color: #000;
+		color: #0BB5FF;
+		padding: 1em;
+		text-align: center;
+		font-size: 1.3em;
+	}
+	
+	#buttons-container{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.hints{
+		display: none;
+	}
+	
+	.video-container{
+		width: 460px;
+		height: 410px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#information{
+		text-align: center;
+	}
+	
+	form{
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid black;
+	}
+	
+	.text{
+		font-weight: bold;
+	}
+	
+	#salary{
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	
+	#salary table{
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		border: 1px solid #3399cc;
+		border-collapse: collapse;
+	}
+	
+	#salary td, th{
+		padding: 5px;
+		border: 1px solid #3399cc;
+		text-align: center !important;
+	}
+	
+	#salary caption{
+		text-align: center;
+	}
+	
+	
+	tr:nth-of-type(even){
+		background-color: #f5fafc;
+	}
+	
+	
+	#personalia, #optional{
+		width: 60%;
+		padding-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#personalia label, #parsonalia input, #optional label, #optional input{
+		display: inline-block;
+		margin: 0.3em
+	}
+	
+	.rad-input{
+		display: inline-block;
+		margin-bottom: 1em;
+	}
+	
+	.text-input{
+		display: block;
+		width: auto;
+		max-width: 300px;
+		margin-bottom: 1em;	
+		margin-left: auto;
+		margin-right: auto;
+		text-align: right;
+	}
+		
+	#questions{
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	textarea{
+		margin-top: 1em;
+		height: 8em;
+		width: 65%;
+	}
+	
+	#information h3{
+		text-align: center;
+	}
+	
+	#information{
+		width: 100%;
+	}
+	
+	#information form{
+		text-align: center;
+	}
+	
+	.button-container{
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.button-container input{
+		display: inline;
+		margin: 1em;
+		height: 2em;
+		width: 6em;
+	}
+	
+	.foot-p{
+		text-decoration: underline;
+	}
+	
+	#join{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2em;
+	}
+	
+	#join img{
+		width: 100%;
+	}
+	
+	#join h3{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1025px){
+	#wrapper {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      float: none;
+    }
+	
+	.web-academy-logo{
+		font-family: fontawesome;
+		text-decoration: none;
+		line-height: 1;
+		font-size: 2.8em;
+		letter-spacing: 3px;
+		color: #555555;
+		top: 17px;
+		text-align: center;
+	}
+	
+	#nav-row.fixed .web-academy-logo{
+		font-family: fontawesome;
+		text-decoration: none;
+		line-height: 1;
+		font-size: 2.8em;
+		letter-spacing: 3px;
+		color: #555555;
+		top: 17px;
+		text-align: center;
+	}
+	
+	#nav-row{
+		height: 5em;
+	}
+	
+	#nav-row.fixed{
+		height: 5em;
+	}
+	
+	header{
+		display: none !important;
+	}
+
+    body {
+      margin-left:0;
+      margin-right:0;
+      width: 100%;
+	  padding-bottom: 200px;
+    }
+
+    nav, nav li, nav a, nav ul{
+     display: none;
+    }
+	
+	
+
+    main, .glass{
+      width: 100%;
+    }
+	
+
+	#searchbox{
+		display: none;
+  }
+
+  
+	.dropbtn {
+		background-color: #000;
+		color: #fff;
+		padding: 10px;
+		font-size: 40px;
+		border: none;
+		cursor: pointer;
+		width: auto;
+	}
+
+	#mobile-logo{
+		display: inline-block;
+		width: 75%;
+	}
+		
+	.dropbtn:hover, .dropbtn:focus {
+		background-color: rgb(0, 178, 192);
+		color: rgb(255, 255, 255);
+	}
+
+	.mobile-nav {
+		position: relative;
+		display: inline-block;
+		margin-left:0.5em;
+		width: auto;
+	}
+	
+
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #000;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.dropdown-content a {
+		color: rgb(255, 255, 255);
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: rgb(0, 178, 192);
+		color: rgb(0,0,0);
+		}
+
+	.show{
+		display:block;
+		width: 90% !important;
+		text-align: center;
+		font-size:2em;
+		z-index: 10;
+	}
+	
+	.mobile-nav{
+		width: 100%;
+	}
+	
+	.tile, .did-you-know, .container-tile{
+		display: block !important;
+		width: 100% !important;
+		padding: 1em !important;
+		height: auto !important;
+		padding: 1em !important;
+		margin-left: 1em !important;
+		margin-right: 1em !important;
+	}
+	
+	.tile-rotate{
+		display: none;
+	}
+	
+	.internal-nav ul li, .internal-nav li a, .internal-nav ul{
+		display: block;
+		width: 100%;
+	}
+	
+	.internal-nav{
+		height: auto;
+	}
+	
+	#about-html, #about-js, #about-css, .did-you-know{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	#learning{
+		width: 90% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		
+	}
+	
+	.contents{
+		width: 100%;
+	}
+
+	.tile img{
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding-left: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.bottom-left, .bottom-middle, .bottom-right, .middle-left, .middle-right{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	
+	footer{
+		overflow: scroll;
+	}
+	
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	table{
+		width: 90%;
+	}
+	
+	caption{
+		margin-left: 50%;
+	}
+	
+	#salary{
+		width: 90%;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 20% !important; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 40%; 
+		padding-right: 10px; 
+		padding-left: 10%;
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Job Title-"; }
+	td:nth-of-type(2):before { content: "2012 Salary-"; }
+	td:nth-of-type(3):before { content: "2013 Salary-"; }
+	td:nth-of-type(4):before { content: "2014 Salary-"; }
+
+	.html-image img, .css-image img, .js-image img{
+		width: 75%;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.image-template img, .container-tile img, #js-image img{
+		width: 90%;
+	}
+	
+	.container-tile img{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 479px){
+	.dropbtn {
+		background-color: #000;
+		color: #fff;
+		padding: 10px;
+		font-size: 40px;
+		border: none;
+		cursor: pointer;
+		width: auto;
+	}
+	
+	.web-academy-logo{
+		font-family: fontawesome;
+		text-decoration: none;
+		line-height: 1;
+		font-size: 2.5em;
+		letter-spacing: 3px;
+		color: #555555;
+		top: 17px;
+		text-align: center;
+	}
+	
+	
+	#nav-row.fixed .web-academy-logo{
+		font-family: fontawesome;
+		text-decoration: none;
+		line-height: 1;
+		font-size: 2.5em;
+		letter-spacing: 3px;
+		color: #555555;
+		top: 17px;
+		text-align: center;
+	}
+	
+	#nav-row{
+		height: 5em !important;
+	}
+	
+	#nav-row.fixed{
+		height: 5em !important;
+	}
+	
+	#code-container{
+		display: none !important;
+	}
+	
+	header{
+		display: none !important;
+	}
+	
+	.tile{
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+	.html-image, .css-image, .js-image{
+		display: none;
+	}
+	
+	#mobile-logo{
+		display: inline-block;
+		width: 80%;
+	}
+	
+	CodeMirror {
+		font-size: 15px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	
+	.tutorial-tile{
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+	
+	.editor, #results{
+		height: 400px;
+	}
+	
+	.container-tile{
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+	#results{
+		background-color: #fff;
+		border: 2px solid #000;
+	}
+
+}
+	

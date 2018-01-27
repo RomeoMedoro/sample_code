@@ -1,0 +1,175 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title>CodeMaster</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/codemirror.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/hint/show-hint.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.css">
+		<link rel= "stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/theme/monokai.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id= "wrapper">
+			<header>
+				<div class="row top">
+					<a class="web-academy-logo" href="../html/index.html">
+						CodeMaster<span class="dotcom">.com</span>
+					</a>
+					<div class="top-right">
+						Where Kid's Learn to Code
+					</div>
+				</div>
+			</header>
+			<div class="row" id="nav-row">		
+				<form id="searchbox" class="col-sm-3">
+	    				<input id="search" type="text" placeholder="Type here">
+	    				<input id="submit" type="submit" value="Search">
+				</form>
+				<nav>
+					<ul class="nav nav-tabs col-sm-7" id="navigation">
+						<li><a href="about.html">ABOUT US</a></li>
+						<li class="active"><a href="games_page.html">PRACTICE CODING</a></li>
+						<li><a href="js_page.html">JAVASCRIPT</a></li>
+						<li><a href="css_page.html">CSS</a></li>
+						<li><a href="html_page.html">HTML5</a></li>
+						<li><a href="index.html">HOME</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-nav">
+					<a class="dropbtn" href="#dropdown">&#9776;</a>
+						<div id="dropdown" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="html_page.html">HTML5</a>
+							<a href="css_page.html">CSS</a>
+							<a href="js_page.html">JAVASCRIPT</a>
+							<a href="games_page.html">PRACTICE</a>
+							<a href="about.html">ABOUT</a>
+						</div>
+					<div id="mobile-logo">
+						<p class="web-academy-logo"><a href="../html/index.html">
+							CodeMaster</a><span class="dotcom">.com</span></p>
+					</div>
+				</div>
+			</div>
+			<main>
+				<div class="main-content">
+					<div class="row">
+						<div class="container">
+							<div id="tutorial-container">
+								<div id="hide1" class="tutorial">
+									<p>Lets practice writing code! In the container below you can see some html tags.</p>
+									<p>Lets start with something simple, inside the div element enter a "p" tag. In the tag write
+										anything you want, make sure you close the tag when you are done. As you type your content
+										take a look at your result window, you'll see your code automatically display. </p>
+									<p>Once you have completed this task, click next to go on to the next practice exercise</p>
+								</div>
+								<div id="hide2" class="tutorial">
+									<p>Inside the your new div create a button and give it an id and an onclick event called "myFunction()"</p>
+									<p>If you need some help click here<a href="#hint1"> hint</a></p>
+									<p class="hints" id="hint1">&lt;button id="button" onclick="myFunction()" &gt;. Make sure to add 
+									the closing tag, and be sure to add the button text between your opening and closing tag elements. This can be 
+									something as simple as "click me". When you are done it should look like this...<button>Click Me</button></p>
+								</div>
+								<div id="hide3" class="tutorial">
+									<p> Great, lets add some styling to your button! Between the style tags enter your button's ID followed by
+									opening and closing curly brackets. Give you button a background color of black, and text color white. Click here for a <a href="#hint2"> hint</a></p>
+									<p class="hints" id="hint2">Remember ids are preceded by a #, classes are preceded by a . elements are not preceded 
+									by anything...Another <a href="#hint3">hint</a><p>
+									<p class="hints" id="hint3">background-color: black; color: white;</p>
+								</div>
+								<div id="hide4" class="tutorial">
+									<p>Now that you have a black button with white text, lets add some javascript to make the function work.</p>
+									<p>You'll notice in the editor we've already created script tags and, and we've started creating the function for you.</p>
+									<p>Inside the function's curly brackets type " alert('hi'); " then in the result window click the button</p>
+								</div>
+								<div id="hide5" class="tutorial">
+									<p>Great! Keep practicing html, css, and javascript on your own using our text editor!</p>
+								</div>
+							</div>
+							<div id="buttons-container">
+								<button id="next">Next>></button>
+							</div>
+						</div>
+					</div>
+					<div class="container-tile">
+						<div class="row">
+							<div class="hidden-tutorial tutorial-tile">
+								<div class="html editor" id="html-container">
+								</div>					
+							</div>
+							<div class="tutorial-tile" id="results">
+								<iframe id="result">
+								</iframe>
+							</div>
+						</div>
+					</div>
+					<A href="#wrapper" class="button">Back to top</A>
+				</div>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="foot">
+							<div class="bottom-left foot-container">
+								<p><i>Copyright &#169; 2017 CodeMaster co.</i></p>
+								<p><a href= "mailto:romeo.medoro@gmail.com">romeo.medoro@gmail.com</a></p>
+								<p><a href= "tel:+1-734-732-6308">Phone: 734.732.6308</a></p>
+								<p>Address: 1556 Old Bridge Court</p>
+								<p>Canton, MI 48188</p>
+							</div>
+							<div class="bottom-middle foot-container">
+								<div class="middle-left">
+									<p class="foot-p">Information</p>
+									<p><a href="../html/index.html">Home</a></p>
+									<p><a href="../html/html_page.html">HTML</a></p>
+									<p><a href="../html/css_page.html">CSS</a></p>
+									<p><a href="../html/js_page.html">JAVASCRIPT</a></p>
+									<p><a href="../html/games_page.html">Tutorials</a></p>
+									<p><a href="../html/about.html">About Us</a></p>
+								</div>
+								<div class="middle-right">
+									<p class="foot-p">Resources</p>
+									<p><a href="https://www.w3schools.com/">W3Schools.com</a></p>
+									<p><a href="https://www.w3.org/">W3C</a></p>
+									<p><a href="https://www.tutorialspoint.com/">Tutorials Point</a></p>
+									<p><a href="https://jquery.com/">JQuery.com</a></p>
+									<p><a href="http://getbootstrap.com/">Bootstrap</a></p>
+								</div>
+							</div>
+							<div class="bottom-right foot-container">
+								<p class="foot-p">Connect With Us</p>
+								<a href="https://www.facebook.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf230;</i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf081;</i>
+                                </a>
+                                <a href="https://www.tumblr.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf174;</i>
+                                </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/codemirror.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/hint/show-hint.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/hint/xml-hint.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/hint/html-hint.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/mode/xml/xml.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/mode/javascript/javascript.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/mode/css/css.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/mode/htmlmixed/htmlmixed.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/selection/active-line.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/edit/matchbrackets.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.18.0/addon/fold/foldcode.js"></script>
+        <script src="../js/main.js"></script>
+		
+   </body>
+</html>

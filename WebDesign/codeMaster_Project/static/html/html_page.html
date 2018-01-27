@@ -1,0 +1,202 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title>CodeMaster</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.css">
+		<link rel= "stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id= "wrapper">
+			<header>
+				<div class="row top">
+					<a class="web-academy-logo" href="../html/index.html">
+						CodeMaster<span class="dotcom">.com</span>
+					</a>
+					<div class="top-right">
+						Where Kid's Learn to Code
+					</div>
+				</div>
+			</header>
+			<div class="row" id="nav-row">		
+				<form id="searchbox" class="col-sm-3">
+	    				<input id="search" type="text" placeholder="Type here">
+	    				<input id="submit" type="submit" value="Search">
+				</form>
+				<nav>
+					<ul class="nav nav-tabs col-sm-7" id="navigation">
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="games_page.html">PRACTICE CODING</a></li>
+						<li><a href="js_page.html">JAVASCRIPT</a></li>
+						<li><a href="css_page.html">CSS</a></li>
+						<li class="active"><a href="html_page.html">HTML5</a></li>
+						<li><a href="index.html">HOME</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-nav">
+					<a class="dropbtn" href="#dropdown">&#9776;</a>
+						<div id="dropdown" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="html_page.html">HTML5</a>
+							<a href="css_page.html">CSS</a>
+							<a href="js_page.html">JAVASCRIPT</a>
+							<a href="games_page.html">PRACTICE</a>
+							<a href="about.html">ABOUT</a>
+						</div>
+					<div id="mobile-logo">
+						<p class="web-academy-logo"><a href="../html/index.html">
+							CodeMaster</a><span class="dotcom">.com</span></p>
+					</div>
+				</div>
+			</div>
+			<main>
+				<div class="main-content">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class= "tile-rotate" id="image-rotate">
+								<img src="../images/angrybirds.jpg" alt="Angry Birds Image">
+								<img src="../images/hexgl.png" alt="HexGl image">
+								<img src="../images/bejewled.jpg" alt="Bejewled Image">
+								<img src="../images/flappybirds.jpg" alt="flappybirds.jpg">
+							</div>
+						</div>
+						<div class="col-sm-6 did-you-know">
+							<div class="learn tile" id="learning">
+								<h3>DID YOU KNOW HTML CAN BE USED TO CREATE GAMES?</h3>
+								<p>Html5 is not just used to create websites. The language is used to create a variety of games 
+									including games like Flappy Birds, Angry Birds, and Bejewled.</p>
+								<p>This portion of the site is dedicated to teaching you the basics you need to start using html today.</p>
+								<p>Learn at your own pace, and practice what you have learned in the "games and puzzles" portion of the site.</p>
+							</div>
+						</div>
+					</div>
+					<div class="contents">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="internal-nav">
+									<ul>
+										<li><a href="#getting-started">Getting Started</a></li>
+										<li><a href="#tag-page">HTML Tags</a></li>
+										<li><a href="#first-page">My First Page</a></li>
+									</ul>
+								</div>
+								<div class="site-hidden" id="getting-started">
+									<div class="container-tile">
+										<h3>Getting Started</h3>
+										<p>There are many programs that can be used to write computer language. These programs are often referred to 
+										   IDEs which is short for Integrated Development Environment. IDEs are powerful programs that can be confusing
+										   for beginners to use. The cool thing with HTML is that all you need is a simple text editor.</p>
+										<p>Many conputers come with text editors already installed, the most common one is called Notepad. While Notepad
+									      is great for beginners, a better text editor would be Notepadd++. Notepad++ is free and easy to install and it
+										  is specifically designed for computer programming. </p>
+										<p>If you chose to use Notepad you are ready to move on to the next section; if you decide you'd prefer to use 
+											Notepad++ you can download it here: <a href="https://notepad-plus-plus.org/download/v7.3.3.html" target="_blank">Download Notepad++</a>
+										<p>As you start using HTML to create your own sites, you can go to <a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a> for additional 
+										   help, information, and resources. </p>
+									</div>
+								</div>
+								<div class="site-hidden" id="tag-page">
+									<div class="container-tile">
+										<h3>HTML Basics</h3>
+										<p>HTML tags are the hidden labels in a web page that tell your web browser how to display the content.</p>
+										<p>Most tags must have two parts, an opening and a closing part. For example, &lt; html &gt; 
+										   is the opening tag and &lt; /html &gt; is the closing tag. Note that the closing tag has 
+										   the same word as the opening tag, but has an additional forward-slash ( / ) character before the word. Think of the slash as the closing character.</p>
+										<p>There are some tags that do not require a closing tag, the &lt; img &gt; tag for showing images and the &lt; br &gt; tag for skipping to the next line are 
+										   two examples. To create a webpage there are tags that you MUST include in your html file. These tags are known as essential tags and they are: </p>
+										<p>&nbsp;&nbsp; &lt; !doctype html &gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tells your browser this is an HTML5 file</p>
+										<p>&nbsp;&nbsp; &lt; html lang=”en” &gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tells your browser the language used in your site</p>
+										<p>&nbsp;&nbsp; &lt; head &gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contains information about your site that will not display on the site itself</p>
+										<p>Although these tags are essential, only using these tags will simply create a blank screen, so the basic elements most commonly used to create a webpage 
+										   that displays on the browser look like this:</p>
+										<div class="image-template">
+											<img src="../images/myFirstPage.PNG" alt="HTML Template Image">
+										</div>
+										<p>In addition to the essential elements, an important tag to remember is the &lt; div &gt; tag. a div is more-or-less a container, and it is used often is creating a 
+											website. Also pay attention to the main, header, and footer tags, these tags are new tags and are part of the HTML5 syntax, so it is good to get into a habit of using them in your code.</p>
+										<p>Html elements can be assigned "class" and "id" attributes. These attributes will be important when you become more experienced, and will be used in applying
+									      CSS to the site, and for various functions using javascript. The "class" attribute can be given to an element, and that element can be used as often as you 
+										  want throughout your page. The "id" attribute can be given to an element, but can only be used once for each page. Below are examples of using the class and id attributes.</p>
+										<p style="text-align: center">&lt; div class="class-name" &gt; &lt; /div &gt; </p>
+										<p style="text-align: center"> &lt; div id="id-name" &gt; &lt; /div &gt; </p>
+									</div>
+								</div>
+								<div class="site-hidden" id="first-page">
+									<div class="container-tile">
+									<h3>My First Website</h3>
+										<p>Follow these instructions to create your very first HTML page!!!</p>
+										<ul>
+											<li>Open your text editor(Notepad, or Notepad++)</li>
+											<li>Enter the essential tags discussed in the previous section<li>
+											<li>Look at the exaple in the previus section, in the p tag where is says "main content goes here" enter Hello World!</li>
+											<li>Make sure you have entered everything correctly, use the code in the previous section as reference.</li>
+											<li>Click "file" and go to "Save As"<li>
+											<li>In the save file dialog select the location you want to save your file, in the File Name section, rename your file to MyFirstPage.html<li>
+												<ul>
+													<li>The .html is the most important part. This is how the browser knows that it is a web-file.</li>
+												</ul>
+											<li>Once the file is saved go to the location in which you've saved it and right-click it. Select "Open with" and click on a Web browser(edge, chrome, IE, etc.)</li>
+										</ul>
+										<p>Once you've completed all the steps you'll see your first page open in your browser. Although there's not much to your first page, this is the way every website design begins.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<A href="#wrapper" class="button">Back to top</A>
+				</div>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="foot">
+							<div class="bottom-left foot-container">
+								<p><i>Copyright &#169; 2017 CodeMaster co.</i></p>
+								<p><a href= "mailto:romeo.medoro@gmail.com">romeo.medoro@gmail.com</a></p>
+								<p><a href= "tel:+1-734-732-6308">Phone: 734.732.6308</a></p>
+								<p>Address: 1556 Old Bridge Court</p>
+								<p>Canton, MI 48188</p>
+							</div>
+							<div class="bottom-middle foot-container">
+								<div class="middle-left">
+									<p class="foot-p">Information</p>
+									<p><a href="../html/index.html">Home</a></p>
+									<p><a href="../html/html_page.html">HTML</a></p>
+									<p><a href="../html/css_page.html">CSS</a></p>
+									<p><a href="../html/js_page.html">JAVASCRIPT</a></p>
+									<p><a href="../html/games_page.html">Tutorials</a></p>
+									<p><a href="../html/about.html">About Us</a></p>
+								</div>
+								<div class="middle-right">
+									<p class="foot-p">Resources</p>
+									<p><a href="https://www.w3schools.com/" target="_blank">W3Schools.com</a></p>
+									<p><a href="https://www.w3.org/" target="_blank">W3C</a></p>
+									<p><a href="https://www.tutorialspoint.com/" target="_blank">Tutorials Point</a></p>
+									<p><a href="https://jquery.com/" target="_blank">JQuery.com</a></p>
+									<p><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+								</div>
+							</div>
+							<div class="bottom-right foot-container">
+								<p class="foot-p">Connect With Us</p>
+								<a href="https://www.facebook.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf230;</i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf081;</i>
+                                </a>
+                                <a href="https://www.tumblr.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf174;</i>
+                                </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+   </body>
+</html>

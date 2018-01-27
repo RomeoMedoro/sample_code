@@ -1,0 +1,195 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title>CodeMaster</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.css">
+		<link rel= "stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id= "wrapper">
+			<header>
+				<div class="row top">
+					<a class="web-academy-logo" href="../html/index.html">
+						CodeMaster<span class="dotcom">.com</span>
+					</a>
+					<div class="top-right">
+						Where Kid's Learn to Code
+					</div>
+				</div>
+			</header>
+			<div class="row" id="nav-row">		
+				<form id="searchbox" class="col-sm-3">
+	    				<input id="search" type="text" placeholder="Type here">
+	    				<input id="submit" type="submit" value="Search">
+				</form>
+				<nav>
+					<ul class="nav nav-tabs col-sm-7" id="navigation">
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="games_page.html">PRACTICE CODING</a></li>
+						<li><a href="js_page.html">JAVASCRIPT</a></li>
+						<li class="active"><a href="css_page.html">CSS</a></li>
+						<li><a href="html_page.html">HTML5</a></li>
+						<li><a href="index.html">HOME</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-nav">
+					<a class="dropbtn" href="#dropdown">&#9776;</a>
+						<div id="dropdown" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="html_page.html">HTML5</a>
+							<a href="css_page.html">CSS</a>
+							<a href="js_page.html">JAVASCRIPT</a>
+							<a href="games_page.html">PRACTICE</a>
+							<a href="about.html">ABOUT</a>
+						</div>
+					<div id="mobile-logo">
+						<p class="web-academy-logo"><a href="../html/index.html">
+							CodeMaster</a><span class="dotcom">.com</span></p>
+					</div>
+				</div>
+			</div>
+			<main>
+				<div class="main-content">
+					<div class="contents">
+						<div class="row" style="margin-top:3em;">
+							<div class="col-sm-12">
+								<div class="internal-nav">
+									<ul>
+										<li><a href="#getting-started">Getting Started</a></li>
+										<li><a href="#syntax">More on CSS syntax</a></li>
+										<li><a href="#trying-it-out">Styling My First Page</a></li>
+									</ul>
+								</div>
+								<div class="site-hidden" id="getting-started">
+								<h4>CASCADING STYLE SHEET</h4>
+									<div class="container-tile">
+										<p>Cascading Style Sheets are what turn your website from a plain black and white site, to a beautiful and colorful site. </p>
+										<p>CSS just like HTML is a file, and just like with HTML you will be using a text editor to write your CSS code. 
+										   CSS saves a lot of work because it can control the layout of multiple web pages all at once. The syntax (the way it is written)
+										   for CSS is much different than the syntax for HTML, but it is just as easy to write.</p>
+									   <p>Instead of tags, in CSS we use the "selector" and curly brackets to apply the style. Below is an example of how we would apply 
+									      a background color to the body of a site by using the body selector.</p>
+									    <p style="text-align:center;"><span class="selectors">body</span>{ background-color: <span class="style">green</span>; }</p>
+										<p> The example above would apply a green background color to the entire body of the webpage. CSS can also be applied to elements using
+										    the "class" and "id" attributes of the element using the id or class attributes the css would look like this:.</p>
+										<p style="text-align: center"><span class="selectors">.class-name</span>{ background-color: <span class="style">green</span>;}</p>
+										<p style="text-align: center"><span class="selectors">#id-name</span>{background-color: <span class="style">green</span>;}</p>
+										<p>Notice the differences in the syntax for the three examples above, when applying css via tag selector you simply just name the element. This would
+										   apply the style you define in your curly brackets to everything inside the body of the HTML file. When applying css via class you use a period followed 
+										   by the class name, when using the class to apply css, the styles will apply only to the elements with that class name. When applying css by id you use the 
+										   hashtag # followed by the class name, just like with the class, using the id will only apply the style to the element with that specific id.</p>
+									   <p>There are three ways that CSS can be applied to a site: externally, internally, and inline. Because externally is the preferred way especially for
+									      beginners, I will only show you how to use an external style sheet.</p>
+									</div>
+								</div>
+								<div class="site-hidden" id="syntax">
+									<h4>CSS syntax/</h4>
+									<div class="container-tile">
+										<p>CSS can be used to make a wide range of changes to your site. CSS can tell the browser where to display elements, what background color to use, 
+										   how much space should between each element, what font and font size to display and so on.</p>
+										<p>CSS is basically a list of declarations. Everything between the curly braces is called the declaration for that selector, and in the declaration
+											there are a number of properties and values. There are several different properties and values available in CSS and learning them all will take time.
+											<a href="https://www.w3schools.com/css/css_howto.asp">W3Schools</a> is a great place to find css properties and values. I will list of the more common
+											ones below:</p>
+										<div class="col-sm-6 container-tile">
+											<img src="../images/css-example.PNG" alt="CSS Example" width="410" height="400">
+										</div>
+										<div class="col-sm-5 container-tile">
+											<p>Notice in the exaple the selector and opening curly bracket are on one line, each property and its value are on their own lines, and the closing curly
+											   bracket is on its own line. Although it is not a requirement to lay your CSS out like that, it is good practice, and makes the CSS easier to read.</p>
+											<p> As you can see from the example you can apply properties to multiple selectors in a single declaration by simply separating each selector with a comma.
+												Also pay attention to the way the colors and sizes are applied. Colors can be applied using english words such as color: red or background-color: red, 
+												or by using hex codes and rgb values. Hex codes are six character codes that start with a hashtag such as #009e0e, and rgb values determine to amount of
+												red, green, and blue colors mixed together to make your final color. rgb values look like this: rgb(255, 50, 50). 255 is the max value of each color so 
+												by looking at the values in my example you can tell that the color would be mostly red because its values are 255 red, 50 green, and 50 blue. The higher all
+												three values are, the closer to white your colors will get, and the lower the values, the closer the color gets to black. Black is written as rgb(0,0,0), 
+												and white is written as rgb(255, 255, 255).</p>
+										</div>
+									</div>
+								</div>
+								<div class="site-hidden" id="trying-it-out">
+									<h4>Let's Apply CSS</h4>
+									<div class="container-tile">
+										<p>Applying CSS takes a few steps. First we'll start with writing the CSS, then we will link it to your HTML. To start, open a new page in your text editor.
+										   Type the following CSS:</p>
+										<div class="image-template">	
+											<img src="../images/css-syntax.PNG" alt="CSS Syntax Example">
+										</div>
+										<p>Once you have completed typing the CSS click "Save As", save your CSS file in the same folder in which you saved your HTML file, but before you save, 
+											change your file name to myFirstCss.css.</p>
+										<p>Now that the css file has been created we need to link our html file to the css. In your text editor open your html file and edit your html by adding the following
+											code to your head element:</p>
+										<div class="image-template">
+											<img src="../images/myFirstCss.PNG" alt="CSS Link Example">
+										</div>
+										<p>Notice that we are adding the "meta" tag, this tag is used to specify the character
+											encoding, while the tag has nothing to do with CSS and I won't be teaching you about it right now, know that it must be included in your HTML document. the "link" tag
+											below that is what links your css and your HTML together. The "href" is the filepath to your css file. The ./ in the filepath tells the computer to start searching for 
+											css file in the same folder the HTML file is located.</p>
+										<p>Additionally we have added a div tag with the id "wrapper", and we have added a class name to the h4 tag. Once you have made your changes save your file, go to the folder
+											in which the html and css file are located, right click your html file, go to "open with" and select your internet browser. Your site is starting to look like a real 
+											website!!</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<A href="#wrapper" class="button">Back to top</A>
+				</div>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="foot">
+							<div class="bottom-left foot-container">
+								<p><i>Copyright &#169; 2017 CodeMaster co.</i></p>
+								<p><a href= "mailto:romeo.medoro@gmail.com">romeo.medoro@gmail.com</a></p>
+								<p><a href= "tel:+1-734-732-6308">Phone: 734.732.6308</a></p>
+								<p>Address: 1556 Old Bridge Court</p>
+								<p>Canton, MI 48188</p>
+							</div>
+							<div class="bottom-middle foot-container">
+								<div class="middle-left">
+									<p class="foot-p">Information</p>
+									<p><a href="../html/index.html">Home</a></p>
+									<p><a href="../html/html_page.html">HTML</a></p>
+									<p><a href="../html/css_page.html">CSS</a></p>
+									<p><a href="../html/js_page.html">JAVASCRIPT</a></p>
+									<p><a href="../html/games_page.html">Tutorials</a></p>
+									<p><a href="../html/about.html">About Us</a></p>
+								</div>
+								<div class="middle-right">
+									<p class="foot-p">Resources</p>
+									<p><a href="https://www.w3schools.com/" target="_blank">W3Schools.com</a></p>
+									<p><a href="https://www.w3.org/" target="_blank">W3C</a></p>
+									<p><a href="https://www.tutorialspoint.com/" target="_blank">Tutorials Point</a></p>
+									<p><a href="https://jquery.com/" target="_blank">JQuery.com</a></p>
+									<p><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+								</div>
+							</div>
+							<div class="bottom-right foot-container">
+								<p class="foot-p">Connect With Us</p>
+								<a href="https://www.facebook.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf230;</i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf081;</i>
+                                </a>
+                                <a href="https://www.tumblr.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf174;</i>
+                                </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+   </body>
+</html>

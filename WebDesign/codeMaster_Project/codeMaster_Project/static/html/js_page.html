@@ -1,0 +1,177 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<title>CodeMaster</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.css">
+		<link rel= "stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id= "wrapper">
+			<header>
+				<div class="row top">
+					<a class="web-academy-logo" href="../html/index.html">
+						CodeMaster<span class="dotcom">.com</span>
+					</a>
+					<div class="top-right">
+						Where Kid's Learn to Code
+					</div>
+				</div>
+			</header>
+			<div class="row" id="nav-row">		
+				<form id="searchbox" class="col-sm-3">
+	    				<input id="search" type="text" placeholder="Type here">
+	    				<input id="submit" type="submit" value="Search">
+				</form>
+				<nav>
+					<ul class="nav nav-tabs col-sm-7" id="navigation">
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="games_page.html">PRACTICE CODING</a></li>
+						<li class="active"><a href="js_page.html">JAVASCRIPT</a></li>
+						<li><a href="css_page.html">CSS</a></li>
+						<li><a href="html_page.html">HTML5</a></li>
+						<li><a href="index.html">HOME</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-nav">
+					<a class="dropbtn" href="#dropdown">&#9776;</a>
+						<div id="dropdown" class="dropdown-content">
+							<a href="index.html">HOME</a>
+							<a href="html_page.html">HTML5</a>
+							<a href="css_page.html">CSS</a>
+							<a href="js_page.html">JAVASCRIPT</a>
+							<a href="games_page.html">PRACTICE</a>
+							<a href="about.html">ABOUT</a>
+						</div>
+					<div id="mobile-logo">
+						<p class="web-academy-logo"><a href="../html/index.html">
+							CodeMaster</a><span class="dotcom">.com</span></p>
+					</div>
+				</div>
+			</div>
+			<main>
+				<div class="main-content">
+					<div class="contents">	
+						<div class="row" style="margin-top:3em;">
+							<div class="col-sm-12">
+								<div class="internal-nav">
+									<ul>
+										<li><a href="#getting-started">Getting Started</a></li>
+										<li><a href="#syntax">JS Syntax</a></li>
+									</ul>
+								</div>
+								<div class="site-hidden" id="getting-started">
+									<div class="container-tile">
+										<h3>Getting Started</h3>
+										<p>Javascript is an easy-to-use programming language that can be embedded in the header of your web pages. 
+										   It can enhance the dynamics and interactive features of your page by allowing you to perform calculations, 
+										   check forms, write interactive games, add special effects, customize graphics selections, create security 
+										   passwords and more.</p>
+										<p> With Javascript we will frequently to objects, events, methods, and properties, so first I will start by
+											explaining what these keywords mean.</p>
+											<dl>
+												<dt>Objects/Properties</dt>
+													<dd>Your web page document is an object. Any table, form, button, image, or link on your page is also an object. 
+														Each object has certain properties (information about the object). This is the same concept as assigning CSS 
+														properties to your HTML objects.
+													</dd>
+												<dt>Methods</dt>
+													<dd>Typical objects have a collection of things that they can do. Different objects can do different things, 
+														just like a light can turn on and off or a door can open and close. In javascript a new document is opened 
+														with the method document.open(). You can write "Hello World" into a document by typing document.write("Hello World"). 
+														both open() and write() are examples of methods of the object: document. Another word for methods is functions, so 
+														if you hear or read the word function, we are still talking about methods.
+													</dd>
+												<dt>Events</dt>
+													<dd>Events are what triggers our functions. The easiest example of this is a button, whose definition includes the words 
+														onClick="doSomthingfunction()". The onClick event, as its name implies, will run the function when the user clicks on the button. 
+														Other common events include OnMouseOver, OnMouseOut, OnFocus, OnBlur, OnLoad, and OnUnload. 
+													</dd>
+											</dl>
+									</div>
+								</div>
+								<div class="site-hidden" id="syntax">
+									<h4>Javascript Syntax</h4>
+										<div class="col-sm-6">
+											<p>Javascript syntax is much different than HTML and CSS and may take much longer to learn. Lets start with the basics; In your Javascript code
+												you will often see the word "var". Var is short for variable, and a variable is basically a compartment that holds a piece of information. When
+												we use javascript to create a program, and we want our program to remember information so that we can use it later, we assign it to a variable. For
+												example the statement: var sayHello = "Hello World"; Stores the message hello world in memory. If later we want to print the message onto the screen
+												we use the write function to do this: document.write(sayHello); There are many different types of variables in javascript but since this is an introductory
+												site we'll only focus on two: strings, and numbers. In JS strings and numbers are assinged to variables almost the same, we start with "var" followed by
+												the variable name. The variable name can be anything you want as long as it begins with a lowercase letter and does not contain spaces or special characters like
+												exclamation points or question marks. The only special charachters allowed in varable names are dashes "-" and underscores"_", it is also good practice
+												to make your variable names descriptive so that it is easy to tell what the variables are for. For example if I wanted to create a variable to hold a person's
+												age I would declare my variable like this: var age=30; When declaring variables the difference between a string and a number is adding quotation marks for 
+												the string variable. for example- var name= "John"; var last-name="Smith"; var age="18"; The string value of the variable declaration is wrapped in quotation marks, 
+												while the number value is not.
+											</p>
+											<p> The example to the right shows what a javascript file looks like. The example is more advanced than what you will be doing initially, but it show what to expect
+												out of your javascript syntax.</p>
+										</div>
+										<div class="col-sm-6">
+											<div id="js-image">
+												<img src="../images/javascript.PNG" alt="Javascript Code Expample">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<A href="#wrapper" class="button">Back to top</A>
+					</div>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="foot">
+							<div class="bottom-left foot-container">
+								<p><i>Copyright &#169; 2017 CodeMaster co.</i></p>
+								<p><a href= "mailto:romeo.medoro@gmail.com">romeo.medoro@gmail.com</a></p>
+								<p><a href= "tel:+1-734-732-6308">Phone: 734.732.6308</a></p>
+								<p>Address: 1556 Old Bridge Court</p>
+								<p>Canton, MI 48188</p>
+							</div>
+							<div class="bottom-middle foot-container">
+								<div class="middle-left">
+									<p class="foot-p">Information</p>
+									<p><a href="../html/index.html">Home</a></p>
+									<p><a href="../html/html_page.html">HTML</a></p>
+									<p><a href="../html/css_page.html">CSS</a></p>
+									<p><a href="../html/js_page.html">JAVASCRIPT</a></p>
+									<p><a href="../html/games_page.html">Tutorials</a></p>
+									<p><a href="../html/about.html">About Us</a></p>
+								</div>
+								<div class="middle-right">
+									<p class="foot-p">Resources</p>
+									<p><a href="https://www.w3schools.com/" target="_blank">W3Schools.com</a></p>
+									<p><a href="https://www.w3.org/" target="_blank">W3C</a></p>
+									<p><a href="https://www.tutorialspoint.com/" target="_blank">Tutorials Point</a></p>
+									<p><a href="https://jquery.com/" target="_blank">JQuery.com</a></p>
+									<p><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+								</div>
+							</div>
+							<div class="bottom-right foot-container">
+								<p class="foot-p">Connect With Us</p>
+								<a href="https://www.facebook.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf230;</i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf081;</i>
+                                </a>
+                                <a href="https://www.tumblr.com/" target="_blank">
+                                    <i style="font-size:50px" class="fa">&#xf174;</i>
+                                </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
+   </body>
+</html>
